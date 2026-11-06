@@ -1,0 +1,4 @@
+# Example only; NOT installed. Host cron timezone is UTC.
+# Run daily at 06:00 UTC. Keep data/review.sqlite on persistent disk.
+# Replace /absolute/path/bellhaven and /secure/bellhaven.env before installing.
+0 6 * * * cd /absolute/path/bellhaven && BELLHAVEN_ENV_FILE=/secure/bellhaven.env /bin/bash ./daily.sh >> data/daily.log 2>&1
